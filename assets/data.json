@@ -1,205 +1,254 @@
 [
-    {
-        "id": 1,
-        "name": "villager.png",
-        "src": "./images/villager",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 2,
-        "name": "seer.png",
-        "src": "./images/seer",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 3,
-        "name": "witch.png",
-        "src": "./images/witch",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 4,
-        "name": "hunter.png",
-        "src": "./images/hunter",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 5,
-        "name": "sorceress.png",
-        "src": "./images/sorceress",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 6,
-        "name": "bodyguard.png",
-        "src": "./images/bodyguard",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 7,
-        "name": "spellcaster.png",
-        "src": "./images/spellcaster",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 8,
-        "name": "mason.png",
-        "src": "./images/mason",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 9,
-        "name": "werewolf.png",
-        "src": "./images/werewolf",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 10,
-        "name": "cupid.png",
-        "src": "./images/cupid",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 11,
-        "name": "diseased.png",
-        "src": "./images/diseased",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 12,
-        "name": "doppelganger.png",
-        "src": "./images/doppelganger",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 13,
-        "name": "drunk.png",
-        "src": "./images/drunk",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 14,
-        "name": "ghost.png",
-        "src": "./images/ghost",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 15,
-        "name": "hoodlum.png",
-        "src": "./images/hoodlum",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 16,
-        "name": "hunter.png",
-        "src": "./images/hunter",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 17,
-        "name": "lycan.png",
-        "src": "./images/lycan",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 18,
-        "name": "mayor.png",
-        "src": "./images/mayor",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 19,
-        "name": "minion.png",
-        "src": "./images/minion",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 20,
-        "name": "moderatoer.png",
-        "src": "./images/moderatoer",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 21,
-        "name": "pi.png",
-        "src": "./images/pi",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 22,
-        "name": "pacifist.png",
-        "src": "./images/pacifist",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 23,
-        "name": "priest.png",
-        "src": "./images/priest",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 24,
-        "name": "prince.png",
-        "src": "./images/prince",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 25,
-        "name": "tanner.png",
-        "src": "./images/tanner",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 26,
-        "name": "troublemaker.png",
-        "src": "./images/troublemaker",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 27,
-        "name": "vampire.png",
-        "src": "./images/vampire",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 28,
-        "name": "blank.png",
-        "src": "./images/blank",
-        "score": 1,
-        "count": 1
-    },
-    {
-        "id": 29,
-        "name": "cursed.png",
-        "src": "./images/cursed",
-        "score": 1,
-        "count": 1
-    }
+   {
+      "id": 1,
+      "name": "villager",
+      "src": "./images/villager.png",
+      "score": 1,
+      "count": 1
+   },
+   {
+      "id": 2,
+      "name": "seer",
+      "src": "./images/seer.png",
+      "score": 7,
+      "count": 1
+   },
+   {
+      "id": 3,
+      "name": "witch",
+      "src": "./images/witch.png",
+      "score": 4,
+      "count": 1
+   },
+   {
+      "id": 4,
+      "name": "hunter",
+      "src": "./images/hunter.png",
+      "score": 3,
+      "count": 1
+   },
+   {
+      "id": 5,
+      "name": "wolf-cub",
+      "src": "./images/wolf-cub.png",
+      "score": -8,
+      "count": 1
+   },
+   {
+      "id": 6,
+      "name": "sorceress",
+      "src": "./images/sorceress.png",
+      "score": -3,
+      "count": 1
+   },
+   {
+      "id": 7,
+      "name": "bodyguard",
+      "src": "./images/bodyguard.png",
+      "score": 3,
+      "count": 1
+   },
+   {
+      "id": 8,
+      "name": "spellcaster",
+      "src": "./images/spellcaster.png",
+      "score": 1,
+      "count": 1
+   },
+   {
+      "id": 9,
+      "name": "village-idiot",
+      "src": "./images/village-idiot.png",
+      "score": 2,
+      "count": 1
+   },
+   {
+      "id": 10,
+      "name": "mason",
+      "src": "./images/mason.png",
+      "score": 2,
+      "count": 1
+   },
+   {
+      "id": 11,
+      "name": "werewolf",
+      "src": "./images/werewolf.png",
+      "score": -6,
+      "count": 1
+   },
+   {
+      "id": 12,
+      "name": "apprentice-seer",
+      "src": "./images/apprentice-seer.png",
+      "score": 4,
+      "count": 1
+   },
+   {
+      "id": 13,
+      "name": "aura-seer",
+      "src": "./images/aura-seer.png",
+      "score": 3,
+      "count": 1
+   },
+   {
+      "id": 14,
+      "name": "cult-leader",
+      "src": "./images/cult-leader.png",
+      "score": 1,
+      "count": 1
+   },
+   {
+      "id": 15,
+      "name": "cupid",
+      "src": "./images/cupid.png",
+      "score": -3,
+      "count": 1
+   },
+   {
+      "id": 16,
+      "name": "diseased",
+      "src": "./images/diseased.png",
+      "score": 3,
+      "count": 1
+   },
+   {
+      "id": 17,
+      "name": "doppelganger",
+      "src": "./images/doppelganger.png",
+      "score": -2,
+      "count": 1
+   },
+   {
+      "id": 18,
+      "name": "drunk",
+      "src": "./images/drunk.png",
+      "score": 4,
+      "count": 1
+   },
+   {
+      "id": 19,
+      "name": "ghost",
+      "src": "./images/ghost.png",
+      "score": 2,
+      "count": 1
+   },
+   {
+      "id": 20,
+      "name": "hoodlum",
+      "src": "./images/hoodlum.png",
+      "score": 0,
+      "count": 1
+   },
+   {
+      "id": 21,
+      "name": "lone-wolf",
+      "src": "./images/lone-wolf.png",
+      "score": -5,
+      "count": 1
+   },
+   {
+      "id": 22,
+      "name": "lycan",
+      "src": "./images/lycan.png",
+      "score": -1,
+      "count": 1
+   },
+   {
+      "id": 23,
+      "name": "mayor",
+      "src": "./images/mayor.png",
+      "score": 2,
+      "count": 1
+   },
+   {
+      "id": 24,
+      "name": "minion",
+      "src": "./images/minion.png",
+      "score": -6,
+      "count": 1
+   },
+   {
+      "id": 25,
+      "name": "moderatoer",
+      "src": "./images/moderatoer.png",
+      "score": 0,
+      "count": 1
+   },
+   {
+      "id": 26,
+      "name": "old-hag",
+      "src": "./images/old-hag.png",
+      "score": 1,
+      "count": 1
+   },
+   {
+      "id": 27,
+      "name": "pi",
+      "src": "./images/pi.png",
+      "score": 3,
+      "count": 1
+   },
+   {
+      "id": 28,
+      "name": "pacifist",
+      "src": "./images/pacifist.png",
+      "score": -1,
+      "count": 1
+   },
+   {
+      "id": 29,
+      "name": "priest",
+      "src": "./images/priest.png",
+      "score": 3,
+      "count": 1
+   },
+   {
+      "id": 30,
+      "name": "prince",
+      "src": "./images/prince.png",
+      "score": 3,
+      "count": 1
+   },
+   {
+      "id": 31,
+      "name": "tanner",
+      "src": "./images/tanner.png",
+      "score": -2,
+      "count": 1
+   },
+   {
+      "id": 32,
+      "name": "troublemaker",
+      "src": "./images/troublemaker.png",
+      "score": -3,
+      "count": 1
+   },
+   {
+      "id": 33,
+      "name": "vampire",
+      "src": "./images/vampire.png",
+      "score": -7,
+      "count": 1
+   },
+   {
+      "id": 34,
+      "name": "tough-guy",
+      "src": "./images/tough-guy.png",
+      "score": 3,
+      "count": 1
+   },
+   {
+      "id": 35,
+      "name": "blank",
+      "src": "./images/blank.png",
+      "score": 0,
+      "count": 1
+   },
+   {
+      "id": 36,
+      "name": "cursed",
+      "src": "./images/cursed.png",
+      "score": -3,
+      "count": 1
+   }
 ]
