@@ -85,8 +85,8 @@
    },
    {
       "id": 13,
-      "name": "Aura-Seer",
-      "src": "./images/Aura-Seer.png",
+      "name": "aura-seer",
+      "src": "./images/aura-seer.png",
       "score": 3,
       "count": 1
    },

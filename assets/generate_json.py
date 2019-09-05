@@ -17,7 +17,7 @@ def format_image_name(url):
 with open('cards.txt') as f:
     id = 0
     for line in f:
-        fileName = format_image_name(line)
+        fileName = format_image_name(line).lower()
         if fileName is None:
             continue
         id += 1
