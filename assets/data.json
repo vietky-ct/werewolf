@@ -1,0 +1,205 @@
+[
+    {
+        "id": 2,
+        "name": "villager",
+        "src": "./images/villager.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 3,
+        "name": "seer",
+        "src": "./images/seer.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 4,
+        "name": "witch",
+        "src": "./images/witch.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 5,
+        "name": "hunter",
+        "src": "./images/hunter.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 7,
+        "name": "sorceress",
+        "src": "./images/sorceress.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 8,
+        "name": "bodyguard",
+        "src": "./images/bodyguard.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 9,
+        "name": "spellcaster",
+        "src": "./images/spellcaster.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 11,
+        "name": "mason",
+        "src": "./images/mason.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 12,
+        "name": "werewolf",
+        "src": "./images/werewolf.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 16,
+        "name": "cupid",
+        "src": "./images/cupid.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 17,
+        "name": "diseased",
+        "src": "./images/diseased.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 18,
+        "name": "doppelganger",
+        "src": "./images/doppelganger.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 19,
+        "name": "drunk",
+        "src": "./images/drunk.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 20,
+        "name": "ghost",
+        "src": "./images/ghost.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 21,
+        "name": "hoodlum",
+        "src": "./images/hoodlum.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 22,
+        "name": "hunter",
+        "src": "./images/hunter.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 24,
+        "name": "lycan",
+        "src": "./images/lycan.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 25,
+        "name": "mayor",
+        "src": "./images/mayor.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 26,
+        "name": "minion",
+        "src": "./images/minion.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 27,
+        "name": "moderatoer",
+        "src": "./images/moderatoer.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 29,
+        "name": "pi",
+        "src": "./images/pi.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 30,
+        "name": "pacifist",
+        "src": "./images/pacifist.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 31,
+        "name": "priest",
+        "src": "./images/priest.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 32,
+        "name": "prince",
+        "src": "./images/prince.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 33,
+        "name": "tanner",
+        "src": "./images/tanner.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 34,
+        "name": "troublemaker",
+        "src": "./images/troublemaker.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 35,
+        "name": "vampire",
+        "src": "./images/vampire.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 37,
+        "name": "blank",
+        "src": "./images/blank.png",
+        "score": 1,
+        "count": 1
+    },
+    {
+        "id": 38,
+        "name": "cursed",
+        "src": "./images/cursed.png",
+        "score": 1,
+        "count": 1
+    }
+]

@@ -28,13 +28,13 @@ function calculate(currentRoles, currentScore, negativeCharacters, positiveChara
     if (currentRoles.length >= totalPlayer) {
         var totalSum = sum(currentRoles, (r) => r.score);
         if (Math.abs(totalSum) <= ACCEPTABLE_SCORE_GAP) {
-            console.log('totalSum', totalSum)
+            // console.log('totalSum', totalSum)
             allPatterns.push(currentRoles.slice());
         }
         return
     }
 
-    console.log('currentRoles', currentRoles.length);
+    // console.log('currentRoles', currentRoles.length);
     // console.log('currentRoles', currentRoles.length, currentScore, totalPlayer)
 
     // pick negativeCharacters
@@ -44,8 +44,8 @@ function calculate(currentRoles, currentScore, negativeCharacters, positiveChara
         if (r.count < 1) {
             continue;
         }
-        currentRoles.push(r);
         r.count -= 1;
+        currentRoles.push(r);
         calculate(currentRoles, currentScore + r.score, negativeCharacters, positiveCharacters, totalPlayer);
         r.count += 1;
         currentRoles.pop();
