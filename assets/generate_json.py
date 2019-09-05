@@ -5,27 +5,28 @@ import json
 p = re.compile('dx-(\w+)_\w+')
 arr = []
 
-def format_image_name(url, id):
+def format_image_name(url):
     m = p.match(url.split('/')[-1].split('?')[0])
     if m is None:
         return None
-    fileName = '{}.png'.format(m.group(1))
     # print('fileName', fileName)
-    d = {
-        "id": id,
-        "name": m.group(1),
-        "src": "./images/{}".format(fileName),
-        "score": 1,
-        "count": 1,
-    }
-    arr.append(d)
+    return m.group(1)
 
-# format_image('http://cdn.shopify.com/s/files/1/0740/4855/products/dx-seer_400x400.png?v=1555593941')
+# format_image_name('http://cdn.shopify.com/s/files/1/0740/4855/products/dx-seer_400x400.png?v=1555593941')
 
 with open('cards.txt') as f:
-    c = 0
+    id = 0
     for line in f:
-        c += 1
-        format_image_name(line, c)
+        fileName = format_image_name(line)
+        if fileName is None:
+            continue
+        id += 1
+        arr.append({
+            "id": id,
+            "name": '{}.png'.format(fileName),
+            "src": "./images/{}".format(fileName),
+            "score": 1,
+            "count": 1,
+        })
     # print(arr)
     print(json.dumps(arr))
