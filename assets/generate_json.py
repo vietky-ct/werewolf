@@ -2,7 +2,7 @@ import requests
 import re
 import json
 
-p = re.compile('dx-(\w+)_\w+')
+p = re.compile('dx-([a-zA-Z]+(-[a-zA-Z]*)*)')
 arr = []
 
 def format_image_name(url):
@@ -23,8 +23,8 @@ with open('cards.txt') as f:
         id += 1
         arr.append({
             "id": id,
-            "name": '{}.png'.format(fileName),
-            "src": "./images/{}".format(fileName),
+            "name": '{}'.format(fileName),
+            "src": "./images/{}.png".format(fileName),
             "score": 1,
             "count": 1,
         })

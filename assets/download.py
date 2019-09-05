@@ -1,7 +1,7 @@
 import requests
 import re
 
-p = re.compile('dx-(\w+)_\w+')
+p = re.compile('dx-([a-zA-Z]+(-[a-zA-Z]*)*)')
 
 def format_image_name(url):
     m = p.match(url.split('/')[-1].split('?')[0])
