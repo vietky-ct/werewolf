@@ -12,9 +12,10 @@ JSON_PATH = "data.json"
 def get_image_paths(JSON_PATH):
   filepaths = []
   with open(JSON_PATH) as json_file:
-    data = json.load(json_file)
-    for character in data:
-      filepaths.append(character["src"])
+    characters = json.load(json_file)
+    characters_sorted_by_id = sorted(characters, key=lambda x : x['id'])
+    for character in characters_sorted_by_id:
+      filepaths.append( character["src"])
   return filepaths
 
 def combine_images(save_path, image_paths, max_columns):
