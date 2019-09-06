@@ -4,7 +4,7 @@ from PIL import Image
 
 # SETTINGS
 MAX_COLUMNS = 6
-COMBINED_FILE = "sprites.png"
+COMBINED_FILE = "sprites.jpg"
 JSON_PATH = "data.json"
 WIDTH=0
 HEIGHT=0
@@ -50,7 +50,7 @@ def start():
     # draw to combinding image
     new_im.paste(img, (x_offset, y_offset))
 
-  # save image
-  new_im.save(COMBINED_FILE)
+    # save image
+    new_im.save(COMBINED_FILE)
 
 start()
