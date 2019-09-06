@@ -1,19 +1,20 @@
 import sys
 import math
+import json
 from PIL import Image
 
 from os import walk
 
 MAX_COLUMNS = 6
 COMBINED_FILE = "sprites.jpg"
-IMAGES_PATH = "./images/"
+JSON_PATH = "data.json"
 
-def get_filepaths_in_dir(dirpath):
+def get_image_paths(JSON_PATH):
   filepaths = []
-  for (dirpath, dirnames, filenames) in walk(dirpath):
-    for name in filenames:
-      filepaths.append(dirpath + name)
-    break
+  with open(JSON_PATH) as json_file:
+    data = json.load(json_file)
+    for character in data:
+      filepaths.append(character["src"])
   return filepaths
 
 def combine_images(save_path, image_paths, max_columns):
@@ -39,4 +40,4 @@ def combine_images(save_path, image_paths, max_columns):
 
   new_im.save(save_path)
 
-combine_images(COMBINED_FILE, get_filepaths_in_dir(IMAGES_PATH), MAX_COLUMNS)
+combine_images(COMBINED_FILE, get_image_paths(JSON_PATH), MAX_COLUMNS)
