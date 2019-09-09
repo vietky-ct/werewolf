@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    background: #fff;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#players__title, 
+#players__input {
+    margin: .5rem;
+}
+
+#players__title {
+    font-size: 1.5rem;
+}
+
+#players__input {
+    padding: .2rem;
+    width: 5rem;
+    border: 2px solid #00B4CC;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.search {
+    display: flex;
+    outline: none;
+    justify-content: center;
+    position: relative;
+}
+
+.search__term {
+    border: 2px solid #FFC300;
+    width: 50%;
+    padding: 1rem;
+    height: 2rem;
+    border-radius: .5rem 0 0 .5rem;
+    border-right: none;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.search__button {
+    height: 2rem;
+    padding: 1rem;
+    background: #FFC300;
+    border: 2px solid #FFC300;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.cards {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cards__image > img,
+.cards__title > p,
+.cards__point > p,
+.cards__checkbox > input {
+    margin-top: .8rem;
+    height: 5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards__image > img {
+    margin-top: .8rem;
+    width: 5rem;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.cards__title > p,
+.cards__point > p {
+    align-content: center;
+    padding: 1.8rem 0;
+    text-align: center;
+}
+
+.cards__image,
+.cards__title,
+.cards__point,
+.cards__checkbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cards__checkbox > input {
+    width: 1.5rem;
+}
+
+.btn {
+    display: flex;
+    outline: none;
+    justify-content: center;
+    position: relative;
+}
+
+#btn__next {
+    padding: 1rem;
+    border: 2px solid #FFC300;
+    background: #FFC300;
+    cursor: pointer;
+}
+
+
+.pattern {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#pattern__title {
+    margin: .5rem;
+}
+
