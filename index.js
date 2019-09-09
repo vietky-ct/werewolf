@@ -1,110 +1,33 @@
+const express = require('express')
+const app = express()
+const port = 3000
+const bodyParser = require('body-parser')
 const {
-    sprites,
-} = require('./data.js');
+    characters,
+    initGame,
+} = require('./handlers');
 
-const {
-    filter,
-    sum
-} = require('./utils.js');
+app.use(bodyParser.json());       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+    extended: false
+}));
 
-const N_PATTERNS_TO_FIND = 5;
+app.post('/cards/init', (req, res) => {
+    console.log('req', req.body, req.params)
 
-const ACCEPTABLE_SCORE_GAP = 3;
-// const POSITIVE_CHARACTERS = filter(sprites, (s) => s.score > 0);
-// const AVG_POSITIVE_SCORE = sum(POSITIVE_CHARACTERS, (s) => s.score) / POSITIVE_CHARACTERS.length;
-// console.log('POSITIVE_CHARACTERS', POSITIVE_CHARACTERS, POSITIVE_CHARACTERS.length)
-// console.log('AVG_POSITIVE_SCORE', AVG_POSITIVE_SCORE)
+    let totalPlayer = req.body.total_player;
+    let selectedCharacters = req.body.selected_characters;
+    let patterns = initGame(totalPlayer, selectedCharacters);
 
-var allPatterns = [];
+    res.status(200)
+        .json(patterns).end()
+})
 
-function calculate(currentRoles, currentScore, negativeCharacters, positiveCharacters, totalPlayer) {
-    if (allPatterns.length > N_PATTERNS_TO_FIND) {
-        return
-    }
-    // if (Math.abs(currentScore) > (totalPlayer - currentRoles.length) * AVG_POSITIVE_SCORE) {
-    //     return;
-    // }
+app.get('/cards/get-all', (req, res) => {
+    res.json(characters)
+        .end()
+})
 
-    if (currentRoles.length >= totalPlayer) {
-        var totalSum = sum(currentRoles, (r) => r.score);
-        if (Math.abs(totalSum) <= ACCEPTABLE_SCORE_GAP) {
-            // console.log('totalSum', totalSum)
-            allPatterns.push(currentRoles.slice());
-        }
-        return
-    }
-
-    // console.log('currentRoles', currentRoles.length);
-    // console.log('currentRoles', currentRoles.length, currentScore, totalPlayer)
-
-    // pick negativeCharacters
-    for (var i in negativeCharacters) {
-        var r = negativeCharacters[i];
-        // console.log('negativeCharacters r', r)
-        if (r.count < 1) {
-            continue;
-        }
-        r.count -= 1;
-        currentRoles.push(r);
-        calculate(currentRoles, currentScore + r.score, negativeCharacters, positiveCharacters, totalPlayer);
-        r.count += 1;
-        currentRoles.pop();
-    }
-
-    // pick positiveCharacters
-    for (var i in positiveCharacters) {
-        var r = positiveCharacters[i];
-        // console.log('positiveCharacters r', r)
-        if (r.count < 1) {
-            continue;
-        }
-        currentRoles.push(r);
-        r.count -= 1;
-        calculate(currentRoles, currentScore + r.score, negativeCharacters, positiveCharacters, totalPlayer);
-        r.count += 1;
-        currentRoles.pop();
-    }
-}
-
-function generate(currentRoles, availableRoles, totalPlayer) {
-    var negativeCharacters = filter(availableRoles, (v) => v.score < 0);
-    var positiveCharacters = filter(availableRoles, (v) => v.score >= 0);
-    console.log('availableRoles', availableRoles);
-    console.log('positiveCharacters', positiveCharacters);
-    console.log('negativeCharacters', negativeCharacters);
-    var currentScore = sum(availableRoles, (v) => v.score);
-    calculate(currentRoles, currentScore, negativeCharacters, positiveCharacters, totalPlayer);
-}
-
-function getAvailableRoles(givenRoleIdList) {
-    var roles = []
-    for (var i = 0; i < sprites.length; i++) {
-        var role = sprites[i];
-        var roleObj = Object.assign({}, role, {
-            count: role.count,
-        });
-
-        var idx = givenRoleIdList.indexOf(role.id);
-        if (idx > -1) {
-            roleObj.count -= 1;
-        }
-        if (roleObj.count > 0) {
-            roles.push(roleObj);
-        }
-    }
-    roles.sort((a, b) => {
-        return a.count - b.count;
-    })
-    return roles;
-}
-
-function initGame(totalPlayer, givenRoleIdList) {
-    var givenRoleList = filter(sprites, (s) => givenRoleIdList.indexOf(s.id) > -1);
-    var availableRoles = getAvailableRoles(givenRoleIdList);
-    generate(givenRoleList, availableRoles, totalPlayer);
-    return [];
-}
-
-initGame(10, [5, 3]);
-
-console.log('allPatterns', allPatterns)
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}!`)
+})

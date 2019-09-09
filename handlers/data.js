@@ -1,4 +1,4 @@
-const sprites = require('./assets/data.json')
+const sprites = require('../assets/data.json')
 const {
     filter
 } = require('./utils.js');
@@ -13,7 +13,7 @@ var negativeCharacters = filter(sprites, (obj) => obj.score < 0);
 
 module.exports = {
     MAX_COUNT,
-    sprites,
+    characters: sprites,
     negativeCharacters,
     positiveCharacters,
     filter,
