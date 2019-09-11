@@ -34,6 +34,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/assets/home.html'));
 })
 
+app.get('/pattern', (req, res) => {
+    res.sendFile(path.join(__dirname + '/assets/pattern.html'))
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}!`)
 })
