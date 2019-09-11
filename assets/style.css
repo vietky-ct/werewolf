@@ -59,6 +59,10 @@
     border-radius: 0 .5rem .5rem 0;
 }
 
+.btn {
+    margin-top: 2rem;
+}
+
 .cards {
     margin: 2rem;
     display: flex;
@@ -127,3 +131,22 @@
     margin: .5rem;
 }
 
+.choice__container {
+    display: flex;
+    margin: 1rem 2rem;
+    border: 1px solid #FFC300;
+}
+
+.choice__container > img {
+    width: 10rem;        
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+#btn__choose {
+    padding: 1rem 2rem;
+    margin: 3rem 1rem;
+    border: 2px solid #FFC300;
+    border-radius: 2rem;
+    background: #FFC300;
+    cursor: pointer;
+}

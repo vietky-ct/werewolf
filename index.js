@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3001
+const path = require('path')
 const bodyParser = require('body-parser')
 const {
     characters,
@@ -11,6 +12,7 @@ app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
     extended: false
 }));
+app.use(express.static('assets'));
 
 app.post('/cards/init', (req, res) => {
     console.log('req', req.body, req.params)
@@ -23,9 +25,13 @@ app.post('/cards/init', (req, res) => {
         .json(patterns).end()
 })
 
-app.get('/cards/get-all', (req, res) => {
-    res.json(characters)
-        .end()
+// app.get('/cards/get-all', (req, res) => {
+//     res.json(characters)
+//         .end()
+// })
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname + '/assets/home.html'));
 })
 
 app.listen(port, () => {
